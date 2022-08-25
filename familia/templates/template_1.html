@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Familiares</title>
+</head>
+<body>
+    
+    {%for familiar in familiares %} <!--Hago un bucle for recorriendo la lista de familiares-->
+    <div style='padding-bottom: 10px; border-radius: 5%; border: 1px solid goldenrod; width: 250px; display: inline-block;'> 
+        <p style="text-align: center;">Nombre: {{familiar.nombre}}</p>
+        <p style="text-align: center;">Apellido:{{familiar.apellido}} </p>
+        <p style="text-align: center;">Edad: {{familiar.edad}}</p>
+        <p style="text-align: center;">Fecha de nacimiento: {{familiar.fecha_nacimiento}}</p>
+    </div>
+
+    {%endfor%}<!--Cierro el for-->
+</body>
+</html>
